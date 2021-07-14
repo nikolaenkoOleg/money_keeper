@@ -1,0 +1,14 @@
+<section class="category">
+  <header class="category__header">
+    <h2 class="category__title">{{ title }}</h2>
+    <ul class="category__stats" *ngFor="let item of stats">
+      <li class="category__stats-item">
+        <span class="category__stats-item-amount">{{ item.value }}{{ item.currency }}</span>
+        <span class="category__stats-item-title">{{ item.title }}</span>
+      </li>
+    </ul>
+  </header>
+  <div class="category__body">
+
+  </div>
+</section>
