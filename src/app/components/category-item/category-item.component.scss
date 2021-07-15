@@ -1,0 +1,21 @@
+.category-item {
+  $root: &;
+  width: 60px;
+  height: 60px;
+  border: 1px solid blue;
+
+  &__edit {
+    display: none;
+  }
+
+  &:hover {
+    #{$root} {
+      &__edit {
+        display: block;
+        width: 5px;
+        height: 5px;
+        background-color: red;
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+@import '../../../assets/fonts/fonts';
+
+.category {
+  width: 500px;
+  height: 200px;
+  border: 1px solid gray;
+
+  &__title {
+    @include regular;
+  }
+}

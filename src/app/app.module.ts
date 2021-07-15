@@ -9,8 +9,8 @@ import { CategoryComponent } from './components/category-block/category-block.co
 @NgModule({
   declarations: [
     AppComponent,
-    CategoryItemComponent,
     CategoryComponent,
+    CategoryItemComponent,
   ],
   imports: [
     BrowserModule,
