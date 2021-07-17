@@ -19,6 +19,7 @@ npm build
 
 ### Icons
 ```sh
-<div>Автор иконок: <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/ru/" title="Flaticon">www.flaticon.com</a></div>
+Icons Author: https://www.freepik.com
+From https://www.flaticon.com/ru/
 ```
 
