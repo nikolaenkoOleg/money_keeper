@@ -3,9 +3,19 @@
 .category {
   width: 500px;
   height: 200px;
-  border: 1px solid gray;
+  background-color: rgb(253, 254, 255);
+  padding: 10px;
+  border-radius: 10px;
+
+  -webkit-box-shadow: 0px 0px 31px 5px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 0px 0px 31px 5px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 0px 31px 5px rgba(34, 60, 80, 0.2);
 
   &__title {
     @include regular;
+  }
+
+  &__body {
+    display: flex;
   }
 }

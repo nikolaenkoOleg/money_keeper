@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 
-import { IStats } from './interfaces/category-block.interface';
+import { IEntryData, IStats } from '../../interfaces/mk.interface';
 
 @Component({
   selector: 'mk-category',
@@ -10,4 +10,6 @@ import { IStats } from './interfaces/category-block.interface';
 export class CategoryComponent {
   @Input() title: string;
   @Input() stats: IStats[];
+  @Input() category: 'string';
+  @Input() entrtiesData: IEntryData[];
 }

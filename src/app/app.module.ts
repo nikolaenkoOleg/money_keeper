@@ -3,14 +3,16 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
-import { CategoryItemComponent } from './components/category-item/category-item.component';
+import { EntryItemComponent } from './components/entry/entry.component';
 import { CategoryComponent } from './components/category-block/category-block.component';
+import { AddCategoryBtnComponent } from './components/add-category-btn/add-category-btn.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CategoryComponent,
-    CategoryItemComponent,
+    EntryItemComponent,
+    AddCategoryBtnComponent,
   ],
   imports: [
     BrowserModule,

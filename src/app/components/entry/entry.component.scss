@@ -1,7 +1,11 @@
-.category-item {
+@import '../../../assets/fonts/fonts';
+
+.entry-item {
   $root: &;
   width: 60px;
   height: 60px;
+  border-radius: 50%;
+  margin-right: 20px;
   border: 1px solid blue;
 
   &__edit {
@@ -17,5 +21,11 @@
         background-color: red;
       }
     }
+  }
+
+  &__title {
+    @include regular;
+    // font-size: $g-fz-medium;
+    // background-color: $g-color;
   }
 }

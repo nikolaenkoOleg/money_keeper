@@ -9,6 +9,10 @@
     </ul>
   </header>
   <div class="category__body">
-    <mk-category-item></mk-category-item>
+    <ng-container *ngFor="let item of entrtiesData">
+      <mk-entry-item [data]="item"></mk-entry-item>
+    </ng-container>
+
+    <mk-add-category-btn></mk-add-category-btn>
   </div>
 </section>
