@@ -1,4 +1,4 @@
-@import '../../../assets/fonts/fonts';
+@import '../../../styles/scss/global/global';
 
 .entry-item {
   $root: &;
@@ -25,7 +25,6 @@
 
   &__title {
     @include regular;
-    // font-size: $g-fz-medium;
-    // background-color: $g-color;
+    font-size: $g-fz-medium;
   }
 }

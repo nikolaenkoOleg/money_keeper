@@ -1,1 +1,8 @@
-@import 'styles/scss/global/global';
+@import './styles/scss/global/global';
+
+body {
+  color: $g-color-font;
+  background-color: $g-color-white;
+  -webkit-font-smoothing: antialiased;
+  @include regular;
+}

@@ -40,7 +40,7 @@
 .mk-main {
   display: flex;
   height: calc(100vh - 100px);
-  overflow: scroll;
+  overflow: auto;
 
   background-image: url('../assets/bg.png');
   background-repeat: repeat;
