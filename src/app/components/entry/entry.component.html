@@ -1,5 +1,5 @@
 <div class="entry-item">
-  <span class="entry-item__title">{{ data?.entry }}</span>
+  <span #title class="entry-item__title">{{ data?.entry | long:titleLength }}</span>
   <div class="entry-item__btn"></div>
   <span class="entry-item__value">{{ data?.value }}</span>
   <span class="entry-item__edit"></span>
