@@ -1,18 +1,31 @@
-@import '../../../assets/fonts/fonts';
+@import '../../../styles/scss/global/global';
 
 .category {
   width: 500px;
   height: auto;
   background-color: rgb(253, 254, 255);
-  padding: 10px;
   border-radius: 10px;
 
   -webkit-box-shadow: 0px 0px 31px 5px rgba(34, 60, 80, 0.2);
   -moz-box-shadow: 0px 0px 31px 5px rgba(34, 60, 80, 0.2);
   box-shadow: 0px 0px 31px 5px rgba(34, 60, 80, 0.2);
 
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: $g-color-grey;
+    border-bottom: 1px solid $g-color-border;
+  }
+
   &__title {
     @include regular;
+    color: $g-color-font;
+    text-transform: uppercase;
+
+    padding: 10px;
+    margin-left: 10px;
   }
 
   &__body {
@@ -21,7 +34,6 @@
     grid-auto-rows: min-max(150px, 200px);
     grid-gap: 10px;
 
-    border: 1px solid red;
-    // max-width: 480px;
+    padding: 20px;
   }
 }

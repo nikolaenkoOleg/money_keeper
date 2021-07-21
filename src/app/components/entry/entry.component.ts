@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, ElementRef, Input, Renderer2, ViewChild } from '@angular/core';
+import { AfterViewInit, ChangeDetectionStrategy, Component, ElementRef, Input, Renderer2, ViewChild } from '@angular/core';
 
 import { IEntryData } from 'src/app/interfaces/mk.interface';
 
@@ -6,11 +6,12 @@ import { IEntryData } from 'src/app/interfaces/mk.interface';
   selector: 'mk-entry-item',
   templateUrl: './entry.component.html',
   styleUrls: ['./entry.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class EntryItemComponent implements AfterViewInit {
   @Input() data: IEntryData;
 
-  public titleLength = 12;
+  public titleLength = 10;
 
   @ViewChild('title') private title: ElementRef;
 
