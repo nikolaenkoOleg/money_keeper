@@ -10,6 +10,6 @@ import { IEntryData, IStats } from '../../interfaces/mk.interface';
 export class CategoryComponent {
   @Input() title: string;
   @Input() stats: IStats[];
-  @Input() category: 'string';
-  @Input() entrtiesData: IEntryData[];
+  @Input() category: string;
+  @Input() entriesData: IEntryData[];
 }

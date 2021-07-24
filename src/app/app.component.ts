@@ -8,7 +8,7 @@ import { IEntryData } from './interfaces/mk.interface';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  public entrtiesData: IEntryData[] = [
+  public entriesData: IEntryData[] = [
     {
       entry: 'Работа',
       value: 100000,
