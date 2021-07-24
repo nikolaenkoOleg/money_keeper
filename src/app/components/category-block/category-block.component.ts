@@ -1,6 +1,10 @@
 import { Component, Input } from '@angular/core';
+import * as moment from 'moment';
+
 
 import { IEntryData, IStats } from '../../interfaces/mk.interface';
+
+
 
 @Component({
   selector: 'mk-category',
@@ -12,4 +16,11 @@ export class CategoryComponent {
   @Input() stats: IStats[];
   @Input() category: string;
   @Input() entriesData: IEntryData[];
+
+  public month: string;
+
+  constructor() {
+    moment.locale('ru');
+    this.month = moment().format('MMM YYYY');
+  }
 }

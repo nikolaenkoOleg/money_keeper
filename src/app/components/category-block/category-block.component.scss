@@ -1,19 +1,18 @@
 @import '../../../styles/scss/global/global';
 
-.category {
+.category-block {
   width: 500px;
   height: auto;
   background-color: rgb(253, 254, 255);
   border-radius: 10px;
 
-  -webkit-box-shadow: 0px 0px 31px 5px rgba(34, 60, 80, 0.2);
-  -moz-box-shadow: 0px 0px 31px 5px rgba(34, 60, 80, 0.2);
-  box-shadow: 0px 0px 31px 5px rgba(34, 60, 80, 0.2);
+  -webkit-box-shadow: 0 0 31px 5px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 0 0 31px 5px rgba(34, 60, 80, 0.2);
+  box-shadow: 0 0 31px 5px rgba(34, 60, 80, 0.2);
 
   &__header {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
 
     background-color: $g-color-grey;
     border-bottom: 1px solid $g-color-border;
@@ -24,8 +23,13 @@
     color: $g-color-font;
     text-transform: uppercase;
 
-    padding: 10px;
+    padding: 15px;
     margin-left: 10px;
+  }
+
+  &__date {
+    font-size: $g-fz-small;
+    color: $g-color-font;
   }
 
   &__body {
