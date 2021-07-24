@@ -17,10 +17,10 @@ export class CategoryComponent {
   @Input() category: string;
   @Input() entriesData: IEntryData[];
 
-  public month: string;
+  public date: string;
 
   constructor() {
     moment.locale('ru');
-    this.month = moment().format('MMM YYYY');
+    this.date = moment().format('MMM YYYY');
   }
 }
