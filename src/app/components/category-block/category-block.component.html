@@ -4,9 +4,11 @@
       <h2 class="category-block__name">{{ title }}</h2>
       <span class="category-block__date"> {{ date }} </span>
     </div>
-    <ul class="category-block__stats" *ngFor="let item of stats">
-      <li class="category-block__stats-item">
-        <span class="category-block__stats-item-amount">{{ item.value }}{{ item.currency }}</span>
+    <ul class="category-block__stats">
+      <li class="category-block__stats-item" *ngFor="let item of stats">
+        <span class="category-block__stats-item-amount">{{ item.value }}
+          <img src="assets/icons/icon-{{ item.currency }}.svg" alt="{{ item.currency }}">
+        </span>
         <span class="category-block__stats-item-title">{{ item.description }}</span>
       </li>
     </ul>

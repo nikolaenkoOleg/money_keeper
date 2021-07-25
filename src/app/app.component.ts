@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { IEntryData } from './interfaces/mk.interface';
+import {IEntryData, IStats} from './interfaces/mk.interface';
 
 @Component({
   selector: 'mk-root',
@@ -49,5 +49,17 @@ export class AppComponent {
       entry: 'Аренда квартиры',
       value: 25000,
     },
+  ];
+  public stats: IStats[] = [
+    {
+      value: 20000,
+      description: 'Получено',
+      currency: 'rub',
+    },
+    {
+      value: 45000,
+      description: 'Бюджет доходов',
+      currency: 'rub',
+    }
   ];
 }

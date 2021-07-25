@@ -1,10 +1,7 @@
 import { Component, Input } from '@angular/core';
 import * as moment from 'moment';
 
-
 import { IEntryData, IStats } from '../../interfaces/mk.interface';
-
-
 
 @Component({
   selector: 'mk-category',
