@@ -1,6 +1,6 @@
-import { AfterViewInit, ChangeDetectionStrategy, Component, ElementRef, Input, Renderer2, ViewChild } from '@angular/core';
+import {AfterViewInit, ChangeDetectionStrategy, Component, ElementRef, Input, Renderer2, ViewChild} from '@angular/core';
 
-import { IEntryData } from 'src/app/interfaces/mk.interface';
+import {IEntryData} from 'src/app/interfaces/mk.interface';
 
 @Component({
   selector: 'mk-entry-item',
