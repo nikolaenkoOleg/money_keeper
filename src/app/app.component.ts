@@ -1,6 +1,6 @@
 import {Component} from '@angular/core';
 
-import {IEntryData, IStats} from './interfaces/mk.interface';
+import {IStats} from './interfaces/mk.interface';
 
 @Component({
   selector: 'mk-root',
@@ -8,48 +8,6 @@ import {IEntryData, IStats} from './interfaces/mk.interface';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  public entriesData: IEntryData[] = [
-    {
-      entry: 'Работа',
-      value: 100000,
-    },
-    {
-      entry: 'Аренда квартиры',
-      value: 25000,
-    },
-    {
-      entry: 'Работа',
-      value: 100000,
-    },
-    {
-      entry: 'Аренда квартиры',
-      value: 25000,
-    },
-    {
-      entry: 'Работа',
-      value: 100000,
-    },
-    {
-      entry: 'Аренда квартиры',
-      value: 25000,
-    },
-    {
-      entry: 'Работа',
-      value: 100000,
-    },
-    {
-      entry: 'Аренда квартиры',
-      value: 25000,
-    },
-    {
-      entry: 'Работа',
-      value: 100000,
-    },
-    {
-      entry: 'Аренда квартиры',
-      value: 25000,
-    },
-  ];
   public stats: IStats[] = [
     {
       value: 20000,

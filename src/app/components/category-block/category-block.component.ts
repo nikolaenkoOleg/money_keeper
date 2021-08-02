@@ -1,7 +1,7 @@
 import {Component, Input} from '@angular/core';
 import * as moment from 'moment';
 
-import {IEntryData, IStats} from '../../interfaces/mk.interface';
+import {IStats} from '../../interfaces/mk.interface';
 
 @Component({
   selector: 'mk-category',
@@ -12,7 +12,14 @@ export class CategoryComponent {
   @Input() title: string;
   @Input() stats: IStats[];
   @Input() category: string;
-  @Input() entriesData: IEntryData[];
+
+  public entriesData = [
+    {
+      id: '0',
+      entry: 'Работа',
+      value: '100000',
+    }
+  ];
 
   public date: string;
 

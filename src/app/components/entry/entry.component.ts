@@ -1,6 +1,6 @@
 import {AfterViewInit, ChangeDetectionStrategy, Component, ElementRef, Input, Renderer2, ViewChild} from '@angular/core';
 
-import {IEntryData} from 'src/app/interfaces/mk.interface';
+import {IIncome} from '../../store/income/income.reducer';
 
 @Component({
   selector: 'mk-entry-item',
@@ -9,7 +9,7 @@ import {IEntryData} from 'src/app/interfaces/mk.interface';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class EntryItemComponent implements AfterViewInit {
-  @Input() data: IEntryData;
+  @Input() data: IIncome;
 
   public titleLength = 10;
 
