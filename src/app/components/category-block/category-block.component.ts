@@ -1,7 +1,8 @@
 import {Component, Input} from '@angular/core';
 import * as moment from 'moment';
 
-import {IStats} from '../../interfaces/mk.interface';
+import {IIncome} from '../../store/income/income.reducer';
+import {Observable} from 'rxjs';
 
 @Component({
   selector: 'mk-category',
@@ -10,16 +11,8 @@ import {IStats} from '../../interfaces/mk.interface';
 })
 export class CategoryComponent {
   @Input() title: string;
-  @Input() stats: IStats[];
   @Input() category: string;
-
-  public entriesData = [
-    {
-      id: '0',
-      entry: 'Работа',
-      value: '100000',
-    }
-  ];
+  @Input() data: Observable<IIncome[]>;
 
   public date: string;
 

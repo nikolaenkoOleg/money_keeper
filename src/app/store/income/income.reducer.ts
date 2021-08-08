@@ -1,6 +1,6 @@
 import {createReducer, on} from '@ngrx/store';
 
-import { add, remove } from './income.actions';
+import {add, remove} from './income.actions';
 
 export const incomeNode = 'income';
 
@@ -20,6 +20,11 @@ const initialState: IncomeState = {
       id: 0,
       entry: 'Работа',
       value: 100000,
+    },
+    {
+      id: 2,
+      entry: 'Аренда квартиры',
+      value: 20000,
     }
   ],
 };

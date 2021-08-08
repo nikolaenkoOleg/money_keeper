@@ -1,10 +1,10 @@
 import {createFeatureSelector, createSelector} from '@ngrx/store';
 
-import {IIncome, incomeNode} from './income.reducer';
+import {incomeNode, IncomeState} from './income.reducer';
 
-const selectIncomeFeature = createFeatureSelector<IIncome>(incomeNode);
+const selectIncomeFeature = createFeatureSelector<IncomeState>(incomeNode);
 
-export const selectIncomes = createSelector(
+export const getIncomes = createSelector(
   selectIncomeFeature,
-  (state: IIncome) => state,
+  (state: IncomeState) => state.income,
 );

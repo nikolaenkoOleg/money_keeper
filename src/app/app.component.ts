@@ -1,6 +1,8 @@
+import {Observable} from 'rxjs';
 import {Component} from '@angular/core';
-
-import {IStats} from './interfaces/mk.interface';
+import {select, Store} from '@ngrx/store';
+import {getIncomes} from './store/income/income.selector';
+import {IIncome} from './store/income/income.reducer';
 
 @Component({
   selector: 'mk-root',
@@ -8,16 +10,9 @@ import {IStats} from './interfaces/mk.interface';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  public stats: IStats[] = [
-    {
-      value: 20000,
-      description: 'Получено',
-      currency: 'rub',
-    },
-    {
-      value: 45000,
-      description: 'Бюджет доходов',
-      currency: 'rub',
-    }
-  ];
+  public income$: Observable<IIncome[]>;
+
+  constructor(private store$: Store) {
+    this.income$ = this.store$.pipe(select(getIncomes));
+  }
 }

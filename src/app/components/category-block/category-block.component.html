@@ -4,17 +4,19 @@
       <h2 class="category-block__name">{{ title }}</h2>
       <span class="category-block__date"> {{ date }} </span>
     </div>
-    <ul class="category-block__stats">
-      <li class="category-block__stats-item" *ngFor="let item of stats">
-        <span class="category-block__stats-item-amount">{{ item.value }}
-          <img src="assets/icons/icon-{{ item.currency }}.svg" alt="{{ item.currency }}">
-        </span>
-        <span class="category-block__stats-item-title">{{ item.description }}</span>
-      </li>
-    </ul>
+    <div class="category-block__stats">
+      <div class="category-block__stats-item">
+        <span class="category-block__stats-item-amount">20000<img alt="rub" src="assets/icons/icon-rub.svg"></span>
+        <span class="category-block__stats-item-title">Получено</span>
+      </div>
+      <div class="category-block__stats-item">
+        <span class="category-block__stats-item-amount">100000<img alt="rub" src="assets/icons/icon-rub.svg"></span>
+        <span class="category-block__stats-item-title">Бюджет доходов</span>
+      </div>
+    </div>
   </header>
   <div class="category-block__body">
-    <ng-container *ngFor="let item of entriesData">
+    <ng-container *ngFor="let item of data | async">
       <mk-entry-item [data]="item"></mk-entry-item>
     </ng-container>
 
