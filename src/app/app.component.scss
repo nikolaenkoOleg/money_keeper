@@ -1,6 +1,6 @@
 @import '../assets/fonts/fonts';
 
-.mk-header {
+.app-header {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -37,7 +37,7 @@
   }
 }
 
-.mk-main {
+.app-main {
   display: flex;
   height: calc(100vh - 100px);
   overflow: auto;
@@ -51,8 +51,7 @@
     display: flex;
     justify-content: space-between;
     width: 70%;
-    margin: 0 auto;
-    margin-top: 50px;
+    margin: 50px auto 0;
   }
 
   &__categories {

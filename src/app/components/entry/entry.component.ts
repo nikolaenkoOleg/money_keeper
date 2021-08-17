@@ -3,7 +3,7 @@ import {AfterViewInit, ChangeDetectionStrategy, Component, ElementRef, Input, Re
 import {IIncome} from '../../store/income/income.reducer';
 
 @Component({
-  selector: 'mk-entry-item',
+  selector: 'app-entry-item',
   templateUrl: './entry.component.html',
   styleUrls: ['./entry.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,

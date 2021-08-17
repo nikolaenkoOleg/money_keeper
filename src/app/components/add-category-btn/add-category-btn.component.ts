@@ -1,7 +1,7 @@
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'mk-add-category-btn',
+  selector: 'app-add-category-btn',
   templateUrl: './add-category-btn.component.html',
   styleUrls: ['./add-category-btn.component.scss']
 })

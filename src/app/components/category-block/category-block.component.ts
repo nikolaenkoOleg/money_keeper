@@ -5,7 +5,7 @@ import {IIncome} from '../../store/income/income.reducer';
 import {Observable} from 'rxjs';
 
 @Component({
-  selector: 'mk-category',
+  selector: 'app-category',
   templateUrl: './category-block.component.html',
   styleUrls: ['./category-block.component.scss'],
 })

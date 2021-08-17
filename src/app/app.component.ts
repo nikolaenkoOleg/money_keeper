@@ -5,7 +5,7 @@ import {getIncomes} from './store/income/income.selector';
 import {IIncome} from './store/income/income.reducer';
 
 @Component({
-  selector: 'mk-root',
+  selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })

@@ -31,10 +31,10 @@ const initialState: IncomeState = {
 
 export const incomeReducer = createReducer(
   initialState,
+
   on(add, (state, { entry }) => ({
     income: [...state.income, entry],
   })),
-
 
   on(remove, (state, { id }) => ({
     income: [

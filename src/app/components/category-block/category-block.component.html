@@ -17,9 +17,9 @@
   </header>
   <div class="category-block__body">
     <ng-container *ngFor="let item of data | async">
-      <mk-entry-item [data]="item"></mk-entry-item>
+      <app-entry-item [data]="item"></app-entry-item>
     </ng-container>
 
-    <mk-add-category-btn></mk-add-category-btn>
+    <app-add-category-btn></app-add-category-btn>
   </div>
 </section>
